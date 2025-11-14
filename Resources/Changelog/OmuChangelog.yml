@@ -1124,3 +1124,9 @@ Entries:
         and GLOBAL points, gives you one LANGUAGE trait point!
   id: 132
   time: '2025-11-08T23:51:34.0000000+00:00'
+- author: 3PonPon3
+  changes:
+    - type: Remove
+      message: Killed the Thieving and Frisky traits in physical traits.
+  id: 133
+  time: '2025-11-14T03:00:04.0000000+00:00'
