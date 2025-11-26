@@ -202,7 +202,7 @@ public sealed class RespiratorSystem : EntitySystem
             var multiplier = -1f;
             foreach (var (_, lung, _) in organs)
             {
-                multiplier *= lung.SaturationLoss;
+                multiplier *= lung.SaturationLoss * respirator.SaturationLoss; // Goob Edit - In a DeltaV Edit :o
             }
             // End DeltaV Code
             UpdateSaturation(uid,  multiplier * (float) respirator.UpdateInterval.TotalSeconds, respirator); // DeltaV: use multiplier instead of negating
