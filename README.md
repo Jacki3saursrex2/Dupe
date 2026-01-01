@@ -1,6 +1,6 @@
 <p align="center"> <img alt="Space Station 14" width="1500" height="843" src="https://github.com/moonycage2/Dupe-Station/blob/master/Resources/Textures/Logo/logo.png" /></p>
 
-This is a fork from [Dupe Station](https://github.com/ProjectOmu/OmuStation), which is a fork of [Goob Station](https://github.com/Goob-Station/Goob-Station), a primary fork from [Space Station 14](https://github.com/space-wizards/space-station-14). To prevent people forking [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server this is the content pack for Dupe Station.
+This is a fork from [Omu Station](https://github.com/ProjectOmu/OmuStation), which is a fork of [Goob Station](https://github.com/Goob-Station/Goob-Station), a primary fork from [Space Station 14](https://github.com/space-wizards/space-station-14). To prevent people forking [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server this is the content pack for Dupe Station.
 
 Dupe Station strives to be a fork heavily focused on roleplay over gameplay while still focusing on community. We intend to take more mechanics from other forks, we wish to make a server where chaos does exist, but is moderate and allow people to still roleplay and not end the round 1 hour in because of a random Assistant/Graytider.
 
