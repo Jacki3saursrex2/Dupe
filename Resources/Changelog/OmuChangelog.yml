@@ -1747,3 +1747,11 @@ Entries:
         lizard only!
   id: 215
   time: '2026-01-11T06:20:55.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Add
+      message: >-
+        Ported the BRDI from EE, and gave it to HoS and BSO in their set
+        selectors.
+  id: 216
+  time: '2026-01-11T08:22:00.0000000+00:00'
