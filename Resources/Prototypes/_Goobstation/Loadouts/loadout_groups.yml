@@ -1284,7 +1284,7 @@
   loadouts:
   - RoboticistPDA
 
-# Salvage / Miner
+# Salvage
 
 - type: loadoutGroup
   id: SalvageEnvirohelm
