@@ -148,39 +148,4 @@ public sealed class UplinkSystem : EntitySystem
         SetUplink(user, implant.Value, balance);
         return true;
     }
-
-    /// <summary>
-    /// Finds the entity that can hold an uplink for a user.
-    /// Usually this is a pda in their pda slot, but can also be in their hands. (but not pockets or inside bag, etc.)
-    /// </summary>
-    public EntityUid? FindUplinkTarget(EntityUid user)
-    {
-        return FindPdaUplinkTarget(user) ?? _goobUplink.FindPenUplinkTarget(user); // Goob - selfexplanatory
-    }
-
-    // Goob - pegged from FindUplinkTarget to FindPda
-    public EntityUid? FindPdaUplinkTarget(EntityUid user)
-    {
-        // Try to find PDA in inventory
-        if (_inventorySystem.TryGetContainerSlotEnumerator(user, out var containerSlotEnumerator))
-        {
-            while (containerSlotEnumerator.MoveNext(out var slot))
-            {
-                if (!slot.ContainedEntity.HasValue)
-                    continue;
-
-                if (HasComp<PdaComponent>(slot.ContainedEntity.Value))
-                    return slot.ContainedEntity.Value;
-            }
-        }
-
-        // Also check hands
-        foreach (var item in _handsSystem.EnumerateHeld(user))
-        {
-            if (HasComp<PdaComponent>(item))
-                return item;
-        }
-
-        return null;
-    }
 }
