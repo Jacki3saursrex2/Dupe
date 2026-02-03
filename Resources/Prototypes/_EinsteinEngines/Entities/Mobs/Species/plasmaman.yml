@@ -40,7 +40,7 @@
     - map: [ "innerNeck" ]
     - map: [ "belt" ] # Omu - Moved belt to render under OuterClothing to have it be similar with how the base drawdepth is.
     - map: [ "outerClothing" ]
-    - map: [ "beltalt" ] # Omu 
+    - map: [ "beltalt" ] # Omu
     - map: [ "eyes" ]
     - map: [ "id" ]
     - map: [ "back" ]
@@ -180,8 +180,6 @@
   - type: TemperatureSpeed
     thresholds:
       243: 0.8
-  - type: Fart
-    gasToFart: Plasma
 
 - type: entity
   parent: BaseSpeciesDummy
